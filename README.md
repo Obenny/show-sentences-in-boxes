@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -7,72 +7,131 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+# Laravel Show Sentences In Boxes 1.0
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> ### This is a project that creates different tables using user input data like rows, columns and the sentences to insert in the table fields or table boxes based on the user needs.
+This repo's functionality is complete!
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+----------
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Getting started
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Note: This templete was tested on XAMPP using Laravel 7.0
 
-## Laravel Sponsors
+To begin using this template, you may:
+[Download and install XAMPP](https://www.apachefriends.org/download.html)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Clone the repository
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+    git clone https://github.com/Obenny/https://github.com/Obenny/show-sentences-in-boxes.git.git 
 
-## Contributing
+Or Download the file from the link below and unzip it
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+     https://github.com/Obenny/https://github.com/Obenny/show-sentences-in-boxes
 
-## Code of Conduct
+Switch to the repo folder
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    cd show-sentences-in-boxes
 
-## Security Vulnerabilities
+Install all the dependencies using composer
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    composer install
+
+Install all the front end and back end dependencies using composer
+
+    npm install or yarn install
+
+Copy the .env.example file and rename it to .env. Make the required configuration changes(like changing the database name, host username, host password as it is on your local host) in the .env file
+
+    cp .env.example .env
+
+Generate a new application key
+
+    php artisan key:generate
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+    php artisan migrate
+
+Run the database seeder to generate sample users in the users-table
+
+    php artisan db:seed --class=DatabaseSeeder
+
+Start the local development server
+
+    php artisan serve
+
+You can now access the server at http://localhost:8000 at any of your browsers
+
+**Summary of command list**
+
+    git clone https://github.com/Obenny/employee-management-system-1.git
+    cd employee-management-system-1
+    composer install
+    npm install or yarn install
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate
+    php artisan db:seed --class=DatabaseSeeder
+    php artisan serve
+
+**Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
+
+    php artisan migrate
+    php artisan serve
+
+## Database seeding
+
+**Populate the database with seed data with relationships which includes users, articles, comments, tags, favorites and follows. This can help you to quickly start testing the api or couple a frontend and start using it with ready content.**
+
+Open the DummyDataSeeder and set the property values as per your requirement
+
+    database/seeds/DummyDataSeeder.php
+
+Run the database seeder and you're done
+
+    php artisan db:seed
+
+***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command
+
+    php artisan migrate:refresh
+
+# Projects features
+
+## Users(Visitors)
+
+- Allow Users to surf the website without login and registration [ DONE ]
+
+## Admin
+
+### Testing credentials
+- #### Email: admin@admin.com
+- #### Password: password
+- #### or you may register to create your own credentials
+
+- Allow ADMIN to Create/Retrieve/Update/Delete Tables and Boxes in the system [ DONE ]
+- Allow ADMIN to Create/Retrieve/Update/Delete Sentences in Boxes in the system [ DONE ]
+
+### Sample Screenshots
+- Sample screenshots can be found on the screenshots-folder
+
+## Built With Template from
+
+* [mini-crm](https://github.com/Obenny/mini-crm)
+
+
+## Author(s)
+
+* **Isaac Obenson** - *Initial work* - [Obenny](https://github.com/Obenny)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to [Dropee](https://www.dropee.com/) and anyone whose idea was used.
